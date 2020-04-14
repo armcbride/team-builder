@@ -29,13 +29,13 @@
   <p><img align="left" src= "https://img.shields.io/badge/License-MIT-blue"></p><br>
   <hr>
   <div id="screen"><h3>Screenshots</h3></div>
-  <p></p>
+  <p><img src="./images/test-screenshot.PNG"></p>
   <hr>
   <div id="contr"><h3>Contributors</h3> </div>
   <p>armcbride</p> 
   <hr>
   <div id="tests"><h3>Tests</h3></div>
-  <p></p>
+  <p><img src="./images/team-builder.gif"></p>
   <hr>
   <div id="quest"><h3>Questions?</h3> </div>
   <img align="right" width="100" height="100" src="https://avatars3.githubusercontent.com/u/58277359?v=4">         
