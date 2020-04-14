@@ -110,9 +110,7 @@ const inquireQuestions = () => {
 inquireQuestions();
 
 function renderHTML(HTML) {
-    console.log(HTML);
-
-    fs.writeFile(outputPath, HTML, function (err) {
+        fs.writeFile(outputPath, HTML, function (err) {
         if (err) {
             return console.log(err);
         }
@@ -121,5 +119,4 @@ function renderHTML(HTML) {
 
 
     })
-}
-console.log(renderHTML);
+};
