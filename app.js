@@ -10,9 +10,6 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
 
-
-// Write code to use inquirer to gather information about the development team members,
-// and to create objects for each team member (using the correct classes as blueprints!)
 let teamMembers = [];
 
 const questions= [
@@ -93,8 +90,7 @@ const inquireQuestions = () => {
                 break;
                 case "finish building":
                     if (teamMembers.length > 0) {
-                        console.log("all done!");
-                        renderHTML(render(teamMembers));
+                        renderPage(render(teamMembers));
                     } else {
                         console.log("no team members");
                     }
@@ -109,14 +105,11 @@ const inquireQuestions = () => {
 }
 inquireQuestions();
 
-function renderHTML(HTML) {
+function renderPage(HTML) {
         fs.writeFile(outputPath, HTML, function (err) {
         if (err) {
             return console.log(err);
         }
-
-        console.log("Success");
-
 
     })
 };
